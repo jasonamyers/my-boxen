@@ -23,4 +23,9 @@ class people::jasonamyers {
     source  => 'jasonamyers/dotfiles',
     require => File[$my]
   }
+
+  exec {
+    'dotfiles':
+        command => 'cd ~/dotfiles && ./bootstrap.sh'
+  }
 }
