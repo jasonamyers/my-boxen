@@ -1,21 +1,21 @@
 class people::jasonamyers {
-  include vagrant
-  include chrome
-  include python
-  include virtualbox
-  include sublime_text_2
-  include spotify
-  include skype
-  include onepassword
-  include iterm2::dev
-  include macvim
-  include heroku
-  include dropbox
+  /*include vagrant*/
+  /*include chrome*/
+  /*include python*/
+  /*include virtualbox*/
+  /*include sublime_text_2*/
+  /*include spotify*/
+  /*include skype*/
+  /*include onepassword*/
+  /*include iterm2::dev*/
+  /*include macvim*/
+  /*include heroku*/
+  /*include dropbox*/
   /*include divvy*/
-  include caffeine
-  include colloquy
-  include flux
-  include sizeup
+  /*include caffeine*/
+  /*include colloquy*/
+  /*include flux*/
+  /*include sizeup*/
   /*include istatmenus4*/
 
   $home     = "/Users/${::luser}"
@@ -27,18 +27,18 @@ class people::jasonamyers {
     require => File[$my]
   }
  
-  package{[
-    'bash-completion',
-    'curl',
-    'libevent',
-    'mysql',
-    'tree',
-    'sqlite',
-    'gdbm',
-    'cmake',
-    'pkg-config',
-    'readline'
-  ]}
+  /*package{[*/
+    /*'bash-completion',*/
+    /*'curl',*/
+    /*'libevent',*/
+    /*'mysql',*/
+    /*'tree',*/
+    /*'sqlite',*/
+    /*'gdbm',*/
+    /*'cmake',*/
+    /*'pkg-config',*/
+    /*'readline'*/
+  /*]}*/
  
   exec {
     'dotfiles':
