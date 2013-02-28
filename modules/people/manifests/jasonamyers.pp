@@ -83,4 +83,15 @@ class people::jasonamyers {
   exec { 'dotfilessubmodules':
     command => 'cd /Users/jasonamyers/my/dotfiles && git submodule init && git submodule update'
   }
+
+  exec { 'gitcompletionerror':
+    command => 'brew uninstall git'
+  }
+
+  package {
+    [
+        'git',
+    ]
+  }
+
 }
