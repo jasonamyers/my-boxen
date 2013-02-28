@@ -91,7 +91,7 @@ class people::jasonamyers {
   package {
     [
         'git',
-    ]
+    ]:
   }
 
 }
