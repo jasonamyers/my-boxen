@@ -31,6 +31,8 @@ class people::jasonamyers {
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
 
+  file{$my: ensure => exist}
+
   repository { $dotfiles:
     source  => 'jasonamyers/dotfiles',
     require => File[$my]
