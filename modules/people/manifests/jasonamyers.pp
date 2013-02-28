@@ -10,7 +10,7 @@ class people::jasonamyers {
   include onepassword
   include iterm2::dev
   include macvim
-  include heroku
+  /*include heroku*/
   include dropbox
   /*include divvy*/
   include caffeine
