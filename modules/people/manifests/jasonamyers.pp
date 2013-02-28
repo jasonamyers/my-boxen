@@ -4,7 +4,7 @@ class people::jasonamyers {
   include chrome
   include python
   include virtualbox
-  /*include sublime_text_2*/
+  include sublime_text_2
   /*include spotify*/
   /*include skype*/
   /*include onepassword*/
