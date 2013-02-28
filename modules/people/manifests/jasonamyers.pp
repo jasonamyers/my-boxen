@@ -28,9 +28,8 @@ class people::jasonamyers {
     /*require => File[$my]*/
   /*}*/
  
-  package{
+  package{'bash-completion'}
   /*[*/
-    'bash-completion'
     /*'curl',*/
     /*'libevent',*/
     /*'mysql',*/
@@ -41,7 +40,7 @@ class people::jasonamyers {
     /*'pkg-config',*/
     /*'readline'*/
   /*]*/
-  }
+  /*}*/
  
   /*exec {*/
     /*'dotfiles':*/
