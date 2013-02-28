@@ -81,6 +81,6 @@ class people::jasonamyers {
   }
 
   exec { 'dotfilessubmodules':
-    command => 'cd ~/my/dotfiles && git submodule init && git submodule update'
+    command => 'cd $dotfiles && git submodule init && git submodule update'
   }
 }
