@@ -79,4 +79,8 @@ class people::jasonamyers {
   exec { 'pipinstallipython':
     command => 'pip install ipython'
   }
+
+  exec { 'dotfilessubmodules':
+    command => 'cd ~/my/dotfiles && git submodule init && git submodule update'
+  }
 }
