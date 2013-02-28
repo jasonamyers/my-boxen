@@ -19,6 +19,14 @@ class people::jasonamyers {
   include sizeup
   /*include istatmenus4*/
 
+  git::config::global { 'user.email':
+    value => 'jason@jasonamyers.com'
+  }
+
+  git::config::global { 'user.name':
+    value => 'Jason Myers'
+  }
+
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
