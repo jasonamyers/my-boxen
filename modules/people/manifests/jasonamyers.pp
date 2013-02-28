@@ -10,6 +10,7 @@ class people::jasonamyers {
   include onepassword
   include iterm2::dev
   include macvim
+  include postgresql
   /*include heroku*/
   include dropbox
   /*include divvy*/
@@ -82,16 +83,6 @@ class people::jasonamyers {
 
   exec { 'dotfilessubmodules':
     command => 'cd /Users/jasonamyers/my/dotfiles && git submodule init && git submodule update'
-  }
-
-  exec { 'gitcompletionerror':
-    command => 'brew uninstall git'
-  }
-
-  package {
-    [
-        'git',
-    ]:
   }
 
 }
