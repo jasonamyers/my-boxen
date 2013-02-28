@@ -28,7 +28,7 @@ class people::jasonamyers {
   }
 
   git::config::global { 'push.default':
-    value => 'simple'
+    value => 'current'
   }
 
   $home     = "/Users/${::luser}"
