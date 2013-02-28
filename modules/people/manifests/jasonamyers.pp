@@ -27,6 +27,10 @@ class people::jasonamyers {
     value => 'Jason Myers'
   }
 
+  git::config::global { 'push.default':
+    value => 'simple'
+  }
+
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
