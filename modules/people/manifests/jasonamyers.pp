@@ -28,8 +28,8 @@ class people::jasonamyers {
   }
 
   $home     = "/Users/${::luser}"
-  $my       = "${home}/my"
-  $dotfiles = "${my}/dotfiles"
+  $my       = "${home}/my/"
+  $dotfiles = "${my}dotfiles"
 
   file { $my: 
     ensure => 'present'
