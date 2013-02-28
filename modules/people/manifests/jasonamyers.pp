@@ -21,12 +21,12 @@ class people::jasonamyers {
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
-  /*$dotfiles = "${my}/dotfiles"*/
+  $dotfiles = "${my}/dotfiles"
 
-  /*repository { $dotfiles:*/
-    /*source  => 'jasonamyers/dotfiles',*/
-    /*require => File[$my]*/
-  /*}*/
+  repository { $dotfiles:
+    source  => 'jasonamyers/dotfiles',
+    require => File[$my]
+  }
  
   package {
     [
