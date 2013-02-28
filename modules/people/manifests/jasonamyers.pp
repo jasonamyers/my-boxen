@@ -30,7 +30,7 @@ class people::jasonamyers {
  
   package {
     [
-        'bash-completion'
+        'bash-completion',
         'curl',
         'libevent',
         'mysql',
