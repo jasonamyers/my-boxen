@@ -1,4 +1,5 @@
 class people::jasonamyers {
+  include xquartz
   /*include vagrant*/
   include chrome
   include python
