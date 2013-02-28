@@ -60,7 +60,23 @@ class people::jasonamyers {
       ]:
   }
  
-  /*exec { 'dotfiles':*/
-    /*command => 'cd ~/my/dotfiles && ./bootstrap.sh'*/
-  /*}*/
+  exec { 'dotfiles':
+    command => 'cd ~/my/dotfiles && ./bootstrap.sh'
+  }
+
+  exec { 'pythonbrewlink':
+    command => 'brew link python --overwrite'
+  }
+
+  exec { 'pipinstallvirtualenvwrapper':
+    command => 'pip install virtualenvwrapper'
+  }
+
+  exec { 'pipinstallflake8':
+    command => 'pip install flake8'
+  }
+
+  exec { 'pipinstallipython':
+    command => 'pip install ipython'
+  }
 }
