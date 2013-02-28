@@ -1,4 +1,5 @@
 class people::jasonamyers {
+  include sysctl
   include xquartz
   /*include vagrant*/
   include chrome
