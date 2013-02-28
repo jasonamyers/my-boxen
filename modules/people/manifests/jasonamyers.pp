@@ -20,12 +20,12 @@ class people::jasonamyers {
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
-  $dotfiles = "${my}/dotfiles"
+  /*$dotfiles = "${my}/dotfiles"*/
 
-  repository { $dotfiles:
-    source  => 'jasonamyers/dotfiles',
-    require => File[$my]
-  }
+  /*repository { $dotfiles:*/
+    /*source  => 'jasonamyers/dotfiles',*/
+    /*require => File[$my]*/
+  /*}*/
  
   /*package{[*/
     /*'bash-completion',*/
@@ -40,8 +40,8 @@ class people::jasonamyers {
     /*'readline'*/
   /*]}*/
  
-  exec {
-    'dotfiles':
-        command => 'cd ~/my/dotfiles && ./bootstrap.sh'
-  }
+  /*exec {*/
+    /*'dotfiles':*/
+        /*command => 'cd ~/my/dotfiles && ./bootstrap.sh'*/
+  /*}*/
 }
