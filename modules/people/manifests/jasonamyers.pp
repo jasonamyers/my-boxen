@@ -9,14 +9,14 @@ class people::jasonamyers {
   include skype
   include onepassword
   include iterm2::dev
-  /*include macvim*/
-  /*include heroku*/
-  /*include dropbox*/
+  include macvim
+  include heroku
+  include dropbox
   /*include divvy*/
-  /*include caffeine*/
-  /*include colloquy*/
-  /*include flux*/
-  /*include sizeup*/
+  include caffeine
+  include colloquy
+  include flux
+  include sizeup
   /*include istatmenus4*/
 
   $home     = "/Users/${::luser}"
