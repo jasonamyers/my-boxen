@@ -5,10 +5,10 @@ class people::jasonamyers {
   include python
   include virtualbox
   include sublime_text_2
-  /*include spotify*/
-  /*include skype*/
-  /*include onepassword*/
-  /*include iterm2::dev*/
+  include spotify
+  include skype
+  include onepassword
+  include iterm2::dev
   /*include macvim*/
   /*include heroku*/
   /*include dropbox*/
