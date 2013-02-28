@@ -1,6 +1,6 @@
 class people::jasonamyers {
   /*include vagrant*/
-  /*include chrome*/
+  include chrome
   /*include python*/
   /*include virtualbox*/
   /*include sublime_text_2*/

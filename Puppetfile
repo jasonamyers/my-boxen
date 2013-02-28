@@ -38,7 +38,7 @@ github "sudo",     "1.0.0"
 # https://github.com/boxen.
 
 #github "vagrant",       "1.0.0"
-#github "chrome",        "1.0.0"
+github "chrome",        "1.0.0"
 #github "python",        "1.0.1"
 #github "virtualbox",    "1.0.0"
 #github "sublime_text_2","1.0.0"
