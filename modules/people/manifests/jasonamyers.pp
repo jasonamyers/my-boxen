@@ -3,7 +3,7 @@ class people::jasonamyers {
   /*include vagrant*/
   include chrome
   include python
-  /*include virtualbox*/
+  include virtualbox
   /*include sublime_text_2*/
   /*include spotify*/
   /*include skype*/
