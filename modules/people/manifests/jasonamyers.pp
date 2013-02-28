@@ -55,8 +55,7 @@ class people::jasonamyers {
       ]:
   }
  
-  /*exec {*/
-    /*'dotfiles':*/
-        /*command => 'cd ~/my/dotfiles && ./bootstrap.sh'*/
+  /*exec { 'dotfiles':*/
+    /*command => 'cd ~/my/dotfiles && ./bootstrap.sh'*/
   /*}*/
 }
