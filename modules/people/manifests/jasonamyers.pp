@@ -16,7 +16,7 @@ class people::jasonamyers {
   include colloquy
   include flux
   include sizeup
-  include istatmenus4
+  /*include istatmenus4*/
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
