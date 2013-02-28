@@ -31,7 +31,9 @@ class people::jasonamyers {
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
 
-  file{$my: ensure => 'exist'}
+  file { $my: 
+    ensure => 'present'
+  }
 
   repository { $dotfiles:
     source  => 'jasonamyers/dotfiles',
