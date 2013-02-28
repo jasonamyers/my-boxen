@@ -2,7 +2,7 @@ class people::jasonamyers {
   include xquartz
   /*include vagrant*/
   include chrome
-  include python
+  /*include python*/
   include virtualbox
   include sublime_text_2
   include spotify
@@ -55,7 +55,8 @@ class people::jasonamyers {
         'gdbm',
         'cmake',
         'pkg-config',
-        'readline'
+        'readline',
+        'python'
       ]:
   }
  
