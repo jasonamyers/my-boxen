@@ -23,9 +23,22 @@ class people::jasonamyers {
     source  => 'jasonamyers/dotfiles',
     require => File[$my]
   }
-
+ 
+  package{[
+    'bash-completion',
+    'curl',
+    'libevent',
+    'mysql',
+    'tree',
+    'sqlite',
+    'gdbm',
+    'cmake',
+    'pkg-config',
+    'readline'
+  ]}
+ 
   exec {
     'dotfiles':
-        command => 'cd ~/dotfiles && ./bootstrap.sh'
+        command => 'cd ~/my/dotfiles && ./bootstrap.sh'
   }
 }
