@@ -11,9 +11,12 @@ class people::jasonamyers {
   include macvim
   include heroku
   include dropbox
-  include divvy
+  /*include divvy*/
   include caffeine
   include colloquy
+  include flux
+  include sizeup
+  include istatmenus4
 
   $home     = "/Users/${::luser}"
   $my       = "${home}/my"
