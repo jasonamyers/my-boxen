@@ -28,18 +28,18 @@ class people::jasonamyers {
     /*require => File[$my]*/
   /*}*/
  
-  /*package{[*/
-    /*'bash-completion',*/
-    /*'curl',*/
-    /*'libevent',*/
-    /*'mysql',*/
-    /*'tree',*/
-    /*'sqlite',*/
-    /*'gdbm',*/
-    /*'cmake',*/
-    /*'pkg-config',*/
-    /*'readline'*/
-  /*]}*/
+  package{[
+    'bash-completion',
+    'curl',
+    'libevent',
+    'mysql',
+    'tree',
+    'sqlite',
+    'gdbm',
+    'cmake',
+    'pkg-config',
+    'readline'
+  ]}
  
   /*exec {*/
     /*'dotfiles':*/
