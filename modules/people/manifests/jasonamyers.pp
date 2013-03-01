@@ -12,7 +12,6 @@ class people::jasonamyers {
   include iterm2::dev
   include macvim
   include postgresql
-  /*include heroku*/
   include dropbox
   /*include divvy*/
   include caffeine

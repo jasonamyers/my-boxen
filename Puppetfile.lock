@@ -44,6 +44,11 @@ GITHUBTARBALL
     git (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.0.0)
@@ -124,6 +129,11 @@ GITHUBTARBALL
     sysctl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
     virtualbox (1.0.0)
@@ -153,6 +163,7 @@ DEPENDENCIES
   flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.0.0)
+  heroku (= 1.0.0)
   homebrew (= 1.0.0)
   hub (= 1.0.0)
   inifile (= 0.9.0)
@@ -171,6 +182,7 @@ DEPENDENCIES
   sublime_text_2 (= 1.0.0)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
+  vagrant (= 1.0.0)
   virtualbox (= 1.0.0)
   xquartz (= 1.0.0)
 
