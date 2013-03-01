@@ -1,7 +1,7 @@
 class people::jasonamyers {
   include sysctl
   include xquartz
-  /*include vagrant*/
+  include vagrant
   include chrome
   /*include python*/
   include virtualbox
@@ -45,7 +45,10 @@ class people::jasonamyers {
     source  => 'jasonamyers/dotfiles',
     require => File[$my]
   }
- 
+
+  heroku::plugin { 'accounts':
+    source => 'ddollar/heroku-accounts'
+  } 
   package {
     [
         'bash-completion',
