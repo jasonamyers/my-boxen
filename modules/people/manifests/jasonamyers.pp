@@ -63,10 +63,30 @@ class people::jasonamyers {
         'python'
       ]:
   }
- 
-  exec { 'dotfiles':
-    command => 'cd ~/my/dotfiles && ./bootstrap.sh'
+  
+  file { "${home}/.bashrc":
+    ensure => 'link',
+    target => "${dotfiles}/bashrc",
   }
+
+  file { "${home}/.bash_profile":
+    ensure => 'link',
+    target => "${dotfiles}/bash_profile",
+  }
+ 
+  file { "${home}/.vim":
+    ensure => 'link',
+    target => "${dotfiles}/vimfolder",
+  }
+
+  file { "${home}/.vimrc":
+    ensure => 'link',
+    target => "${dotfiles}/vimrc",
+  }
+
+  /*exec { 'dotfiles':*/
+    /*command => 'cd ~/my/dotfiles && ./bootstrap.sh'*/
+  /*}*/
 
   exec { 'pythonbrewlink':
     command => 'brew link python --overwrite'
