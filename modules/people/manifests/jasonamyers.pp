@@ -19,6 +19,7 @@ class people::jasonamyers {
   include flux
   include sizeup
   /*include istatmenus4*/
+  include linkinus
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
