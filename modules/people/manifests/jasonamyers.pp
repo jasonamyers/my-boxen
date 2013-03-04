@@ -22,7 +22,7 @@ class people::jasonamyers {
   include linkinus
   include wedge
   include mou
-  include evernote
+  /*include evernote*/
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
