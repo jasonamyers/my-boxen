@@ -20,6 +20,7 @@ class people::jasonamyers {
   include sizeup
   /*include istatmenus4*/
   include linkinus
+  include wedge
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
