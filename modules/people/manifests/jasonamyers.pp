@@ -21,6 +21,7 @@ class people::jasonamyers {
   /*include istatmenus4*/
   include linkinus
   include wedge
+  include mou
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
