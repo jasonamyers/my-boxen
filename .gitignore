@@ -11,3 +11,4 @@
 /vendor/gems/
 vendor/puppet/cache/
 .projects
+Puppetfile.lock
