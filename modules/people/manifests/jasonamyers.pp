@@ -3,7 +3,6 @@ class people::jasonamyers {
   include xquartz
   include vagrant
   include chrome
-  /*include python*/
   include virtualbox
   include sublime_text_2
   include spotify
@@ -13,16 +12,15 @@ class people::jasonamyers {
   include macvim
   include postgresql
   include dropbox
-  /*include divvy*/
   include caffeine
   include colloquy
   include flux
   include sizeup
-  /*include istatmenus4*/
   include linkinus
   include wedge
   include mou
-  /*include evernote*/
+  include evernote
+  include libreoffice
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
