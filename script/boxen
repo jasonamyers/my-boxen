@@ -39,10 +39,12 @@ unless ENV["BOXEN_NO_PULL"] || ARGV.include?("--no-pull")
     upstream_changes = `git rev-list --count master..origin/master`.chomp != '0'
     fast_forwardable = `git rev-list --count origin/master..master`.chomp == '0'
 
-    short_branch = current_branch.split('/')[2..-1].join('/')
-
-    if !master
-      warn "Boxen on a non-master branch '#{short_branch}', won't auto-update!"
+    if current_branch.empty?
+      ref = `git log -1 --pretty=format:%h`
+      warn "Boxen not currently on any branch (ref: #{ref}), won't auto-update!"
+    elsif !master
+      local_branch =  current_branch.split('/')[2..-1].join('/')
+      warn "Boxen on a non-master branch '#{local_branch}', won't auto-update!"
     elsif !fast_forwardable
       warn "Boxen's master branch is out of sync, won't auto-update!"
     elsif !clean
@@ -64,7 +66,7 @@ end
 
 # Make sure our local dependencies are up to date.
 
-strap = %w(script/bootstrap --deployment --local --without development:test)
+strap = %w(script/bootstrap --deployment --local --without development:test --no-cache)
 abort "Can't bootstrap, dependencies are outdated." unless system *strap
 
 # Set up our local configuration, deps, and load path.
