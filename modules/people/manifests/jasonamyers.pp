@@ -22,6 +22,7 @@ class people::jasonamyers {
   include evernote
   include libreoffice
   include postbox
+  include wunderlist
 
   git::config::global { 'user.email':
     value => 'jason@jasonamyers.com'
